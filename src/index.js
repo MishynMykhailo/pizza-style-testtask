@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter basename="/">
+        <BrowserRouter basename="/pizza-style-testtask/">
           <App />
         </BrowserRouter>
       </PersistGate>
