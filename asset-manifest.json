@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pizza-style-testtask/static/css/main.03c7f364.css",
-    "main.js": "/pizza-style-testtask/static/js/main.a900fd08.js",
+    "main.js": "/pizza-style-testtask/static/js/main.73b6e4d8.js",
     "static/media/pepperoni_tomat.jpg": "/pizza-style-testtask/static/media/pepperoni_tomat.92d7b06604818d7bcf85.jpg",
     "static/media/calisto.jpg": "/pizza-style-testtask/static/media/calisto.718a2db61b5a982a7eb4.jpg",
     "static/media/margarita.jpg": "/pizza-style-testtask/static/media/margarita.3facf39ef3539b37003a.jpg",
@@ -21,10 +21,10 @@
     "static/media/hamburgerMenu.svg": "/pizza-style-testtask/static/media/hamburgerMenu.609987e5ed0cbf8ae405509366ee46d9.svg",
     "static/media/closedHamburgerMenu.svg": "/pizza-style-testtask/static/media/closedHamburgerMenu.67ce4a17463e0d768b34ef0bc4510751.svg",
     "main.03c7f364.css.map": "/pizza-style-testtask/static/css/main.03c7f364.css.map",
-    "main.a900fd08.js.map": "/pizza-style-testtask/static/js/main.a900fd08.js.map"
+    "main.73b6e4d8.js.map": "/pizza-style-testtask/static/js/main.73b6e4d8.js.map"
   },
   "entrypoints": [
     "static/css/main.03c7f364.css",
-    "static/js/main.a900fd08.js"
+    "static/js/main.73b6e4d8.js"
   ]
 }
