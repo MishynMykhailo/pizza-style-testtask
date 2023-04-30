@@ -1,16 +1,33 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 320px) {
+  .desktopNav {
+    display: none;
+  }
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+  }
+  .logoCont {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobileNav {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .mobileNav {
     display: none;
+    flex-direction: column;
   }
   .desktopNav {
     display: block;
   }
-}
-@media screen and (max-width: 1199px) {
-  .desktopNav {
-    display: none;
-  }
-  .mobileNav {
+  .logoCont {
     display: flex;
     flex-direction: row-reverse;
   }
