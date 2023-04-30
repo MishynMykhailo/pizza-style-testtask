@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto;
+  background-color: #f9930f;
+  /* background-color: orange; */
+  box-shadow: 0px 4px 8px 4px rgba(34, 60, 80, 0.2);
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,50 @@
+.nav {
+  display: flex;
+}
+
+.link {
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  color: #2a363b;
+  font-size: 18px;
+}
+.cartCount {
+  display: flex;
+}
+.cartCount__title {
+  margin-right: 10px;
+}
+.cartSVG {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.cartCount__count {
+  display: flex;
+  align-items: center;
+}
+.activeLink {
+  composes: link;
+  color: black;
+}
+.relativeBlock {
+  position: relative;
+}
+.link:hover,
+.link:focus {
+  color: white;
+  fill: white;
+}
+.link:hover::after,
+.link:focus::after {
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+}

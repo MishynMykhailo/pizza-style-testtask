@@ -1,0 +1,52 @@
+.section {
+  padding: 20px;
+  background-color: orange;
+  box-shadow: 0px -15px 10px -15px rgba(34, 60, 80, 0.2);
+}
+.footer {
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+.p {
+  color: black;
+  transition: var(--main-transition);
+  font-weight: 500;
+}
+.SVG {
+  stroke: transparent;
+  width: 48px;
+  height: 48px;
+  transition: var(--main-transition);
+}
+.h2 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.li {
+  outline: none;
+}
+.li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.a {
+  color: white;
+  transition: var(--main-transition);
+}
+.a:hover,
+.a:focus {
+  color: white;
+}
+.a:hover .SVG,
+.a:focus .SVG {
+  fill: white;
+}
+.a:hover .p,
+.a:focus .p {
+  color: white;
+}
