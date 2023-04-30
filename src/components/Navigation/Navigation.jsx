@@ -2,7 +2,6 @@ import React from "react";
 import s from "./Navigation.module.css";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as CartSVG } from "../../helpers/images/cart.svg";
-import Cart from "../../pages/Cart/Cart";
 
 function Navigation({ allQuantity }) {
   return (
