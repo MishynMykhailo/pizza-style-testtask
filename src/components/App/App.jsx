@@ -35,7 +35,7 @@ function App() {
 
     if (checkCart) {
       dispatch(actions.updateStateDecrement({ id }));
-      if (checkCart.quantity === 1 || checkCart.quantity < 1) {
+      if (checkCart.quantity <= 1) {
         dispatch(actions.deleteCart({ id }));
       }
     }

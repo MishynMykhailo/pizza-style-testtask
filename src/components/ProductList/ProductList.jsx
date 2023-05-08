@@ -9,13 +9,18 @@ function ProductList({ pizzaList, allCartsList, onAddCart, onDeleteCart }) {
         <ul className={s.ul}>
           {pizzaList &&
             pizzaList.map(({ id, title, description, price, image }) => {
-              let cartItem =
+              const cartItem =
                 allCartsList && allCartsList.length > 0
                   ? allCartsList.find(({ id: pizzId }) => pizzId === id)
                   : null;
               return (
                 <li className={s.li} key={id}>
-                  <img className={s.img} src={image} alt={title} />
+                  <img
+                    className={s.img}
+                    src={image}
+                    alt={title}
+                    loading="lazy"
+                  />
                   <div className={s.descrBlock}>
                     <p className={s.title}>{title}</p>
                     <p className={s.description}>{description}</p>

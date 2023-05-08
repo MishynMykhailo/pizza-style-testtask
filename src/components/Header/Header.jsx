@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { getItemsValueState } from "../../redux/cart/cart-selectors";
 import { ReactComponent as Logo } from "../../helpers/images/pizza.svg";
-
+import { Link } from "react-router-dom";
 import s from "./Header.module.css";
 import MobileNavigation from "../MobileNavigation/MobileNavigation";
 import Navigation from "../Navigation/Navigation";
@@ -18,8 +18,10 @@ function Header() {
     <section className={s.section}>
       <header className={s.header}>
         <div className={s.logoCont}>
-          <Logo className={s.img} />
-          <h2 className={s.h2}>PizzaStyle</h2>
+          <Link to="/">
+            <Logo className={s.img} />
+            <h2 className={s.h2}>PizzaStyle</h2>
+          </Link>
         </div>
         <nav className={s.mobileNav}>
           <MobileNavigation allQuantity={allQuantity} />

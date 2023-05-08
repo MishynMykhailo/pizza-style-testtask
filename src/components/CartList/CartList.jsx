@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import * as actions from "../../redux/cart/cart-actions";
 function CartList({ cartsList, onAddCart, onDeleteCart }) {
-  const dispath = useDispatch();
+  const dispatch = useDispatch();
   const [allOrderSum, setAllOrderSum] = useState(0);
   useEffect(() => {
     const result = cartsList.reduce(
@@ -14,7 +14,7 @@ function CartList({ cartsList, onAddCart, onDeleteCart }) {
     setAllOrderSum(result);
   }, [cartsList]);
   const clearList = () => {
-    dispath(actions.resetCart());
+    dispatch(actions.resetCart());
   };
   return (
     <section className={s.section}>
@@ -30,7 +30,12 @@ function CartList({ cartsList, onAddCart, onDeleteCart }) {
                 );
                 return (
                   <li className={s.li} key={id}>
-                    <img className={s.img} src={image} alt={title} />
+                    <img
+                      className={s.img}
+                      src={image}
+                      alt={title}
+                      loading="lazy"
+                    />
                     <div className={s.descrBlock}>
                       <p className={s.title}>{title}</p>
                       <p className={s.description}>{description}</p>

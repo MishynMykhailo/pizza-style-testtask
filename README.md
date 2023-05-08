@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Тестове завдання для FrontEnd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Реалізувати функціонал веб-додатку "PizzaStyle".
 
-## Available Scripts
+## Технології:
 
-In the project directory, you can run:
+<ul>
+<li>React</li>
+<li>Redux/Redux Toolkit</li>
+</ul>
 
-### `npm start`
+### Сторінки:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<ul>
+<li>Pizza</li>
+<li>Cart</li>
+</ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Header:
 
-### `npm test`
+<ul>
+<li>В хедері знаходяться логотип сайту PizzaStyle та навігація. За замовчуванням ми знаходимось на сторінці Pizza.</li>
+<li>Якщо у корзині є додані товари, біля корзини з’являється відповідна цифра. Якщо додана одна піца, то повинна світитися цифра 1, якщо додані 2 піци, то відповідно цифра 2.</li>
+</ul>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### PizzaPage:
 
-### `npm run build`
+<ul>
+<li>На сторінці міститься список карток товарів.</li>
+<li>Кожна картка містить картинку товару, назву, опис, ціну та кнопку "Add to cart"</li>
+</ul>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### CartPage:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<ul>
+<li>Якщо у корзині немає товарів, то відображається напис Please, choose pizza here, де here - це посилання на сторінку PizzaPage</li>
+<li>Якщо у корзині є товари, то відображаються відповідні картки товарів.</li>
+<li>Кожна картка містить картинку, назву, опис, кнопку "-" (мінус), кількість цього товару у корзині, кнопку "+" (плюс), ціну цього товару.</li>
+<li>Над картками товарів міститься напис Total: {Сума усіх товарів} UAH.</li>
+<li>Ще нижче знаходиться кнопка Make an order. При кліку на цю кнопку корзина повністю очищається і замість карток та суми з’являється напис Please, choose pizza here</li>
+</ul>
